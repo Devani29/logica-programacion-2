@@ -14,7 +14,8 @@ function convertirTemperatura() {
         if (entradaUsuario !== null && entradaUsuario.trim() !== "" && !isNaN(gradosCelsius)) {
             esNumValido = true;  // Salimos del bucle
         } else{
-            console.log("Error: El dato ingresado no es un número. Por favor intenta de nuevo")
+            alert("Error: El dato ingresado no es un número. Por favor ingresa un valor numérico.");
+            console.error("Dato inválido ingresado. Solicitando nuevamente.")
         }
     }
 
